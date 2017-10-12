@@ -7,7 +7,7 @@ def adicionar_filme(cod_filme,titulo,genero,ano):
 def listar_filmes():
     return filmes
 
-def buscar_filmes(cod_filme):
+def buscar_filme(cod_filme):
     for f in filmes:
         if (f[0] == cod_filme):
             return f
