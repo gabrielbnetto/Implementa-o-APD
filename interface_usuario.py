@@ -1,5 +1,6 @@
 from GUI import menu_filme
 from GUI import menu_usuario
+from logica import historico
 
 print(".--------------------------------------.\n"+
       "|   Escolha uma das seguintes opcoes:  |\n"+
@@ -8,5 +9,6 @@ print(".--------------------------------------.\n"+
       "|   (3)Ver Historico de Filmes         |\n"+
       "|   (0)Sair                            |\n"+
       ".--------------------------------------.\n")
+
 escolha = int(input())
 

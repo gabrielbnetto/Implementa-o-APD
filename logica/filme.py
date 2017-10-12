@@ -7,13 +7,13 @@ def adicionar_filme(cod_filme,titulo,genero,ano):
 def listar_filmes():
     return filmes
 
-def buscar_filmes(cod_filme):
+def buscar_filme(cod_filme):
     for f in filmes:
         if (f[0] == cod_filme):
             return f
     return None
 
-def buscar_filmes_por_genero(genero):
+def buscar_filme_por_genero(genero):
     for f in filmes:
         if (f[2] == genero):
             return f
@@ -27,5 +27,5 @@ def remover_filme(cod_filme):
     return False
 
 def iniciar_filmes():
-    adicionar_usuario(555555,"Amadeus","terror",1999)
-    adicionar_usuario(444444,"Homem Aranha","acao",1999)
+    adicionar_filme(555555,"Amadeus","terror",1999)
+    adicionar_filme(444444,"Homem Aranha","acao",1999)
