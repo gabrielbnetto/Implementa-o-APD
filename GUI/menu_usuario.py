@@ -11,7 +11,7 @@ def menu_adicionar():
     cpf = int(input("CPF: "))
     nome = input("Nome: ")
     email = input("Email: ")
-    senha = int(input("Senha: "))
+    senha = input("Senha: ")
     usuario.adicionar_usuario(cpf,nome,email,senha)
 
 def menu_listar():
@@ -40,13 +40,13 @@ def menu_remover():
 
 def mostrar_menu():
     rodar_usuario = True
-    menu = ("Menu Usuario\n"+
-             "(1) Adicionar novo Usuario \n" +
-             "(2) Listar Usuario \n" +
-             "(3) Buscar Usuario por CPF \n" +
-             "(4) Remover Usuario \n" +
-             "(0) Voltar\n"+
-            "----------------")
+    menu = (".-----------Menu Usuario---------.\n"+
+            "|   (1) Adicionar novo Usuario   |\n" +
+            "|   (2) Listar Usuario           |\n"+
+            "|   (3) Buscar Usuario por CPF   |\n" +
+            "|   (4) Remover Usuario          |\n" +
+            "|   (0) Voltar                   |\n"+
+            ".--------------------------------.")
 
     while(rodar_usuario):
         print (menu)

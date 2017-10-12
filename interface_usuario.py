@@ -1,28 +1,29 @@
 from GUI import menu_filme
 from GUI import menu_usuario
-from logica import historico
+import time
 
-def menu_geral():
-    run_menu = True
+run_menu = True
+
+def mostrar_menu_principal():
     print(".--------------------------------------.\n"+
           "|   Escolha uma das seguintes opcoes:  |\n"+
           "|   (1)Ver Menu de Filmes              |\n"+
           "|   (2)Ver Menu de Usuario             |\n"+
-          "|   (3)Ver Historico de Filmes         |\n"+
           "|   (0)Sair                            |\n"+
           ".--------------------------------------.\n")
+    return int(input())
 
-    escolha = int(input())
-    while run_menu:
-        if escolha == 1:
-            menu_filme.mostrar_menu()
 
-        elif escolha == 2:
-            menu_usuario.mostrar_menu()
+while run_menu:
+    escolha = mostrar_menu_principal()
+    if escolha == 1:
+        menu_filme.mostrar_menu()
 
-        elif escolha == 0:
-            run_menu = False
-            menu_geral()
+    elif escolha == 2:
+        menu_usuario.mostrar_menu()
 
-menu_geral()
+    elif escolha == 0:
+        print("--------------Saindo--------------------")
+        run_menu = False
+
 
