@@ -1,5 +1,5 @@
-import filme
-#from logica import usuario
+from logica import filme
+from logica import usuario
 
 filmes_vistos_usuarios = []
 
