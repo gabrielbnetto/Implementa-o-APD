@@ -1,6 +1,6 @@
 filmes=[]
 
-def adicionar_filme(cod_filme,titulo,genero,ano)
+def adicionar_filme(cod_filme,titulo,genero,ano):
     filme = [cod_filme,titulo,genero,ano]
     filmes.append(filme)
 
