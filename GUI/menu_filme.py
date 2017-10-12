@@ -49,14 +49,14 @@ def menu_remover():
 
 def mostrar_menu():
     rodar_filme = True
-    menu = ("Menu Filme\n"+
-            "(1) Adicionar novo Filme \n" +
-            "(2) Listar Filmes \n" +
-            "(3) Buscar Filme por Codigo \n" +
-            "(4) Buscar Filme por Genero \n" +
-            "(5) Remover Filme \n" +
-            "(0) Voltar\n"+
-            "----------------")
+    menu = (".---------Menu Filme-----------.\n"+
+            "|(1) Adicionar novo Filme      |\n"+
+            "|(2) Listar Filmes             |\n"+
+            "|(3) Buscar Filme por Codigo   |\n"+
+            "|(4) Buscar Filme por Genero   |\n"+
+            "|(5) Remover Filme             |\n"+
+            "|(0) Voltar                    |\n"+
+            ".------------------------------.")
 
     while(rodar_filme):
         print (menu)
