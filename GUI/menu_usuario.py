@@ -9,7 +9,7 @@ def imprimir_usuario(usuario):
 def menu_adicionar():
     print ("Adicionar Usuario \n")
     cpf = int(input("CPF: "))
-    nome = (input("Nome: ")
+    nome = input("Nome: ")
     email = input("Email: ")
     senha = int(input("Senha: "))
     usuario.adicionar_usuario(cpf,nome,email,senha)

@@ -9,7 +9,7 @@ def imprimir_filme(filme):
 def menu_adicionar():
     print ("Adicionar Filme \n")
     cod_filme = int(input("Codigo do Filme: "))
-    titulo = (input("Título: ")
+    titulo = input("Título: ")
     genero = input("Gênero: ")
     ano = int(input("Ano: "))
     filme.adicionar_filme(cod_filme,titulo,genero,ano)
