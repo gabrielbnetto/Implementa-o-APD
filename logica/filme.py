@@ -27,5 +27,5 @@ def remover_filme(cod_filme):
     return False
 
 def iniciar_filmes():
-    adicionar_usuario(555555,"Amadeus","terror",1999)
-    adicionar_usuario(444444,"Homem Aranha","acao",1999)
+    adicionar_filme(555555,"Amadeus","terror",1999)
+    adicionar_filme(444444,"Homem Aranha","acao",1999)
