@@ -13,7 +13,7 @@ def buscar_filme(cod_filme):
             return f
     return None
 
-def buscar_filmes_por_genero(genero):
+def buscar_filme_por_genero(genero):
     for f in filmes:
         if (f[2] == genero):
             return f
