@@ -21,5 +21,5 @@ def remover_usuario(cpf):
     return False
 
 def iniciar_usuarios():
-    adicionar_usuario(555555,"Joao","joao@hotmail.com",123456)
-    adicionar_usuario(444444,"Lucas","lucas@hotmail.com",abcde)
+    adicionar_usuario(555555,"Joao","joao@hotmail.com","123456")
+    adicionar_usuario(444444,"Lucas","lucas@hotmail.com","RNIEHO")
