@@ -1,10 +1,17 @@
 from GUI import menu_filme
 from GUI import menu_usuario
-import time
+from logica import filme
+from logica import usuario
 
+def iniciar_dados():
+    filme.iniciar_filmes()
+    usuario.iniciar_usuarios()
+    
 run_menu = True
 
+
 def mostrar_menu_principal():
+    
     print(".--------------------------------------.\n"+
           "|   Escolha uma das seguintes opcoes:  |\n"+
           "|   (1)Ver Menu de Filmes              |\n"+
@@ -13,7 +20,7 @@ def mostrar_menu_principal():
           ".--------------------------------------.\n")
     return int(input())
 
-
+iniciar_dados()
 while run_menu:
     escolha = mostrar_menu_principal()
     if escolha == 1:
