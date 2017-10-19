@@ -11,14 +11,14 @@ run_menu = True
 
 
 def mostrar_menu_principal():
-    
+    print()    
     print(".--------------------------------------.\n"+
           "|   Escolha uma das seguintes opcoes:  |\n"+
           "|   (1)Ver Menu de Filmes              |\n"+
           "|   (2)Ver Menu de Usuario             |\n"+
           "|   (0)Sair                            |\n"+
           ".--------------------------------------.\n")
-    return int(input())
+    return int(input("Opcao escolhida: "))
 
 iniciar_dados()
 while run_menu:

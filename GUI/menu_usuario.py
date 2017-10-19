@@ -8,7 +8,7 @@ def imprimir_usuario(usuario):
     print()
 
 def menu_adicionar():
-    print ("Adicionar Usuario \n")
+    print ("\nAdicionar Usuario \n")
     cpf = int(input("CPF: "))
     nome = input("Nome: ")
     email = input("Email: ")
@@ -16,13 +16,13 @@ def menu_adicionar():
     usuario.adicionar_usuario(cpf,nome,email,senha)
 
 def menu_listar():
-    print ("Listar Usuarios \n")
+    print ("\nListar Usuarios \n")
     usuarios = usuario.listar_usuarios()
     for u in usuarios:
         imprimir_usuario(u)
 
 def menu_buscar():
-    print ("Buscar Usuario por CPF \n")
+    print ("\nBuscar Usuario por CPF \n")
     cpf = int(input("CPF: "))
     u = usuario.buscar_usuario(cpf)
     if (u == None):
@@ -31,7 +31,7 @@ def menu_buscar():
         imprimir_usuario(u)
 
 def menu_remover():
-    print ("Remover Usuario \n")
+    print ("\nRemover Usuario \n")
     cpf = int(input("CPF: "))
     u = usuario.remover_usuario(cpf)
     if (u == False):
@@ -41,7 +41,7 @@ def menu_remover():
 
 def mostrar_menu():
     rodar_usuario = True
-    menu = (".-----------Menu Usuario---------.\n"+
+    menu = ("\n.-----------Menu Usuario---------.\n"+
             "|   (1) Adicionar novo Usuario   |\n" +
             "|   (2) Listar Usuario           |\n"+
             "|   (3) Buscar Usuario por CPF   |\n" +

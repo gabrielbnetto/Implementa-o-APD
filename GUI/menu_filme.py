@@ -8,7 +8,7 @@ def imprimir_filme(filme):
     print()
 
 def menu_adicionar():
-    print ("Adicionar Filme \n")
+    print ("\nAdicionar Filme \n")
     cod_filme = int(input("Codigo do Filme: "))
     titulo = input("Título: ")
     genero = input("Gênero: ")
@@ -16,13 +16,13 @@ def menu_adicionar():
     filme.adicionar_filme(cod_filme,titulo,genero,ano)
 
 def menu_listar():
-    print ("Listar Filmes \n")
+    print ("\nListar Filmes \n")
     filmes = filme.listar_filmes()
     for f in filmes:
         imprimir_filme(f)
 
 def menu_buscar():
-    print ("Buscar Filme por Codigo \n")
+    print ("\nBuscar Filme por Codigo \n")
     cod_filme = int(input("Codigo do Filme: "))
     f = filme.buscar_filme(cod_filme)
     if (f == None):
@@ -31,7 +31,7 @@ def menu_buscar():
         imprimir_filme(f)
 
 def menu_buscar_por_genero():
-    print ("Buscar Filme por Gênero \n")
+    print ("\nBuscar Filme por Gênero \n")
     genero = int(input("Gênero: "))
     f = filme.buscar_filme_por_genero(genero)
     if (f == None):
@@ -40,7 +40,7 @@ def menu_buscar_por_genero():
         imprimir_filme(f)
 
 def menu_remover():
-    print ("Remover Filme \n")
+    print ("\nRemover Filme \n")
     cod_filme = int(input("Codigo do Filme: "))
     f = filme.remover_filme(cod_filme)
     if (f == False):
@@ -50,7 +50,7 @@ def menu_remover():
 
 def mostrar_menu():
     rodar_filme = True
-    menu = (".---------Menu Filme-----------.\n"+
+    menu = ("\n.---------Menu Filme-----------.\n"+
             "|(1) Adicionar novo Filme      |\n"+
             "|(2) Listar Filmes             |\n"+
             "|(3) Buscar Filme por Codigo   |\n"+
