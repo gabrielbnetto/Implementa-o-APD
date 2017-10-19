@@ -32,7 +32,7 @@ def menu_buscar():
 
 def menu_buscar_por_genero():
     print ("\nBuscar Filme por Gênero \n")
-    genero = int(input("Gênero: "))
+    genero = input("Gênero: ")
     f = filme.buscar_filme_por_genero(genero)
     if (f == None):
         print ("Filme não encontrado")
