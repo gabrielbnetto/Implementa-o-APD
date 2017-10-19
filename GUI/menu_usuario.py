@@ -5,6 +5,7 @@ def imprimir_usuario(usuario):
     print ("Nome: ", usuario[1])
     print ("Email: ", usuario[2])
     print ("Senha: ", usuario[3])
+    print()
 
 def menu_adicionar():
     print ("Adicionar Usuario \n")

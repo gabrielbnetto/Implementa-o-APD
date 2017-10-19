@@ -5,6 +5,7 @@ def imprimir_filme(filme):
     print ("Título: ", filme[1])
     print ("Gênero: ", filme[2])
     print ("Ano: ", filme[3])
+    print()
 
 def menu_adicionar():
     print ("Adicionar Filme \n")
