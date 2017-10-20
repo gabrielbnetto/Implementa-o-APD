@@ -26,6 +26,10 @@ def remover_filme(cod_filme):
             return True
     return False
 
+def remover_todos_filmes():
+    global filmes
+    filmes = []
+
 def iniciar_filmes():
     adicionar_filme(555555,"Amadeus","terror",1999)
     adicionar_filme(444444,"Homem Aranha","acao",1999)
