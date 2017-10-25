@@ -22,14 +22,8 @@ def listar_filmes_assistidos(cpf):
         f = filme.buscar_filme(codigo)
         filmes.append(f[1])
     return filmes
-            
-##registrar_filme_assistido(1234567, 555555)
-##registrar_filme_assistido(1234567, 444444)
-##
-##registrar_filme_assistido(1473343, 444444)
-##
-##registrar_filme_assistido(9743458, 444444)
-##
-##print(listar_filmes_assistidos(1234567))
-##print(listar_filmes_assistidos(1473343))
-##print(listar_filmes_assistidos(9743458))
+
+def limpar_historico():
+    global filmes_vistos_usuarios
+    filmes_vistos_usuarios = []
+
