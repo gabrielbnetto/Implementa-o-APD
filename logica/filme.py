@@ -1,7 +1,7 @@
-filmes=[]
+filmes = []
 
-def adicionar_filme(cod_filme,titulo,genero,ano):
-    filme = [cod_filme,titulo,genero,ano]
+def adicionar_filme(cod_filme, titulo, genero, ano, url):
+    filme = [cod_filme, titulo, genero, ano, url]
     filmes.append(filme)
 
 def listar_filmes():
@@ -31,5 +31,6 @@ def remover_todos_filmes():
     filmes = []
 
 def iniciar_filmes():
-    adicionar_filme(555555,"Amadeus","terror",1999)
-    adicionar_filme(444444,"Homem Aranha","acao",1999)
+    adicionar_filme(555555, "It", "terror", 2017, "filmes/It.mp4")
+    adicionar_filme(444444, "Star Wars: The Last Jedi", "acao", 2017, "filmes/Star Wars The Last Jedi.mp4")
+    adicionar_filme(333333, "Thor Ragnarok", "acao", 2017, "filmes/Thor Ragnarok.mp4")

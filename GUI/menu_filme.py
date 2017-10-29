@@ -1,4 +1,5 @@
 from logica import filme
+from logica import video_stream
 
 def imprimir_filme(filme):
     print("Codigo do Filme: ",  filme[0])
@@ -13,7 +14,8 @@ def menu_adicionar():
     titulo = input("Título: ")
     genero = input("Gênero: ")
     ano = int(input("Ano: "))
-    filme.adicionar_filme(cod_filme,titulo,genero,ano)
+    url = input("URL: ")
+    filme.adicionar_filme(cod_filme, titulo, genero, ano, url)
 
 def menu_listar():
     print ("\nListar Filmes \n")
@@ -48,6 +50,16 @@ def menu_remover():
     else:
         print ("Filme removido")
 
+def menu_executar_filme():
+    cod_filme = int(input("Codigo do Filme: "))
+    f = filme.buscar_filme(cod_filme)
+    if (f == None):
+        print ("Filme não encontrado")
+    else:
+        nome_filme = f[1]
+        url_filme = f[4]
+        video_stream.play_video(nome_filme, url_filme)
+
 def mostrar_menu():
     rodar_filme = True
     menu = ("\n.---------Menu Filme-----------.\n"+
@@ -56,6 +68,7 @@ def mostrar_menu():
             "|(3) Buscar Filme por Codigo   |\n"+
             "|(4) Buscar Filme por Genero   |\n"+
             "|(5) Remover Filme             |\n"+
+            "|(6) Executar Filme            |\n"+
             "|(0) Voltar                    |\n"+
             ".------------------------------.")
 
@@ -73,5 +86,7 @@ def mostrar_menu():
             menu_buscar_por_genero()
         elif (op == 5):
             menu_remover()
+        elif (op == 6):
+            menu_executar_filme()
         elif (op == 0):
             rodar_filme = False
