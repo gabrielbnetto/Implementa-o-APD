@@ -24,6 +24,7 @@ def remover_todos_usuarios():
     global usuarios
     usuarios =[]
 
+
 def iniciar_usuarios():
     adicionar_usuario(555555,"Joao","joao@hotmail.com","123456")
     adicionar_usuario(444444,"Lucas","lucas@hotmail.com","RNIEHO")
