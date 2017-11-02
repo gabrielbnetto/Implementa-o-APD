@@ -1,5 +1,6 @@
 from GUI import menu_filme
 from GUI import menu_usuario
+from GUI import menu_assistir_filme
 from logica import filme
 from logica import usuario
 
@@ -16,6 +17,7 @@ def mostrar_menu_principal():
           "|   Escolha uma das seguintes opcoes:  |\n"+
           "|   (1)Ver Menu de Filmes              |\n"+
           "|   (2)Ver Menu de Usuario             |\n"+
+          "|   (3)Ver Menu para Assistir Filmes   |\n"+
           "|   (0)Sair                            |\n"+
           ".--------------------------------------.\n")
     return int(input("Opcao escolhida: "))
@@ -28,6 +30,9 @@ while run_menu:
 
     elif escolha == 2:
         menu_usuario.mostrar_menu()
+
+    elif escolha == 3:
+        menu_assistir_filme.mostrar_menu()
 
     elif escolha == 0:
         print("--------------Saindo--------------------")
